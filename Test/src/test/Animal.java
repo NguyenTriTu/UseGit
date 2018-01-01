@@ -6,16 +6,39 @@
 package test;
 
 /**
- *
  * @author Apple
  */
-public class Animal {
+public abstract class Animal {
 
-    public void keu() {
-        System.out.println("");
+    private Can can;
+    private Keu keu;
+
+    Animal() {
+    }
+
+
+
+    public Can getCan() {
+        return can;
+    }
+
+    public void setCan(Can can) {
+        this.can = can;
+    }
+
+    public Keu getKeu() {
+        return keu;
+    }
+
+    public void setKeu(Keu keu) {
+        this.keu = keu;
     }
 
     public void can() {
-        System.out.println("");
+        can.doCan();
+    }
+
+    public void keu() {
+        keu.doKeu();
     }
 }

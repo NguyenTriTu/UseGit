@@ -6,19 +6,14 @@
 package test;
 
 /**
- *
  * @author Apple
  */
 public class Cat extends Animal {
 
-    @Override
-    public void can() {
-        System.out.println("can kieu Cat"); //To change body of generated methods, choose Tools | Templates.
-    }
+    private static final String name = "cat";
 
-    @Override
-    public void keu() {
-        System.out.println("keu kieu Cat"); //To change body of generated methods, choose Tools | Templates.
+    public Cat() {
+        this.setCan(new CatCan());
+        this.setKeu(new CatKeu());
     }
-
 }

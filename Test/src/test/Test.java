@@ -21,9 +21,11 @@ public class Test {
         bulldog.keu();
         tom.can();
         tom.keu();
-        Animal dogToy = new DogToy();
-        dogToy.can();
-        dogToy.keu();
+
+        Animal toyDog = new Dog();
+        toyDog.setCan(new CatCan());
+        toyDog.can();
+        toyDog.keu();
     }
 
 }
