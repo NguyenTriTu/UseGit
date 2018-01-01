@@ -15,12 +15,15 @@ public class Test {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Dog bulldog = new Dog();
-        Cat tom = new Cat();
+        Animal bulldog = new Dog();
+        Animal tom = new Cat();
         bulldog.can();
         bulldog.keu();
         tom.can();
         tom.keu();
+        Animal dogToy = new DogToy();
+        dogToy.can();
+        dogToy.keu();
     }
 
 }
