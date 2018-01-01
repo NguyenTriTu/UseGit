@@ -10,25 +10,17 @@ package test;
  * @author Apple
  */
 public class Student {
+
     private String name;
-    private int id;
+    private String skill;
 
-    public String getName() {
-        return name;
+    public void setName(String setName) {
+        name = setName;
+        System.out.println(name);
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void def(int dame) {
+        skill = "skill " + dame;
+        System.out.println(skill);
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-    
-    
-    
 }
